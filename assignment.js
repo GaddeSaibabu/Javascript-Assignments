@@ -1,11 +1,29 @@
-let userInput = 50;
-let result;
+const task3Element = document.getElementById('task-3');
 
-result = userInput + 18;
+//function1
+function wlcmMsg(){
+    alert("Welcome To Javascript!");
+}
 
-result = result - 12;
-result = result * 2;
-result = result / 4;
+//function2
+function user(name){
 
-alert(userInput);
-alert(result);
+alert('Hi ' + name );    
+}
+
+//function3
+function dateOfBirth(date,month,year){
+    const DOB = date + '-' + month + "-" + year;
+    return DOB;
+    
+}
+//calling the functions
+wlcmMsg();
+user("Saibabu");
+
+//addListener 
+task3Element.addEventListener('click', wlcmMsg);
+
+const DOB = dateOfBirth('25','may','1994');
+
+alert("Your date of birth is " + DOB);
